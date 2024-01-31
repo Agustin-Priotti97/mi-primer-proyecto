@@ -1,0 +1,321 @@
+/* GLOBALES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #9BC779; 
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+/* barra navegacion global*/
+
+.header {
+    display: flex;
+    background-color: #0E792C;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.header .logo img {
+    height: 60px;
+}
+
+.header .barra-navegacion .ul-navegacion {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.header .barra-navegacion .ul-navegacion li a {
+    text-decoration: none;
+    background-color: #9BC779;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.header .barra-navegacion .ul-navegacion li a:hover{
+    background-color: #0c421b;
+}
+
+
+/* index */
+
+.img-article {
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+} 
+
+.contenedor-index {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.div-contenedor {
+    margin-top: 1rem;
+}
+
+.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo{
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo, .ul-article{
+    list-style: none;
+}
+
+.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo, .ul-article .boton-ver-mas a{
+    text-decoration: none;
+    color: black;
+}
+
+.boton-ver-mas {
+    background-color: #0E792C;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.boton-ver-mas:hover{
+    background-color: #0c421b;
+}
+
+
+/* tabla */
+
+.complemento div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2.h2Tabla {
+    color: #333;
+    text-align: center;
+}
+
+.complemento table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.complemento th, .complemento td {
+    border: 1px solid grey;
+    padding: 8px;
+    text-align: center;
+}
+
+.complemento th {
+    background-color: #333;
+    color: white;
+}
+
+
+/* footer */
+
+footer { 
+    background-color: #0E792C;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+/* index mq de tablet y deskop */
+
+@media screen and (min-width:768px){
+    .contenedor-index .section-principal .div-contenedor {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* pagina messi, neymar, ronaldo */
+
+
+.contenedor-pagina .section-pagina .h1-pagina, h2, h3, h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenedor-pagina .section-pagina .div-pagina .img-pagina {
+    display: block;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.contenedor-pagina .section-pagina .div-pagina .parrafo-pagina {
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.contenedor-pagina .section-pagina .div-pagina .ul-div-pagina{
+    text-align: center;
+    margin: 10px;
+    padding: 10px 30px;
+    list-style: none;
+}
+
+.contenedor-pagina .section-pagina .div-pagina, h3 h4 {
+    text-align: center;
+}   
+
+
+/* mq tablet y deskop */
+
+@media screen and (min-width:768px) {
+    .contenedor-pagina .section-pagina {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .contenedor-pagina .section-pagina .div-pagina .img-pagina {
+        min-width: 50%;
+        width: 100%;
+    }
+
+    .contenedor-pagina .section-pagina .div-pagina .div-contenido-pagina {
+        display: flex;
+    }
+    
+    .contenedor-pagina .section-pagina .div-pagina .div-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .contenedor-pagina .section-pagina .div-pagina h2 {
+        margin-top: 20px;
+    }
+
+    .contenedor-pagina .section-pagina .div-pagina .div-modificador{
+        display: block;
+    }
+}
+
+
+/* inicio de sesion */
+
+
+.bg {
+    background-image: url(/imagenes/lostresinicio2.jpg);
+    background-position: center center;
+}
+
+
+
+/* galeria */
+
+.main-galeria .img-galeria-cuatro, .img-galeria-cinco, .img-galeria-seis, .img-galeria-siete {
+    display: none;
+}
+
+.main-galeria .div-img-galeria .div-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.main-galeria {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 1rem;
+    margin: 2rem 4rem;
+}
+
+/* mq tablet y deskop */
+
+@media screen and (min-width:768px) {
+    .main-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .main-galeria .img-galeria-siete{
+        display: block;
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main-galeria .img-galeria-cuatro, .img-galeria-cinco, .img-galeria-seis {
+        display: block;
+    }
+
+    .main-galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20% 20% 50%;
+    }
+
+    .main-galeria .img-galeria-uno, .main-galeria .img-galeria-dos, .main-galeria .img-galeria-tres {
+        grid-row: span 2;
+    }
+}
+
+
+/* sobre nosotros */
+
+.main-sobre-nosotros {
+    background-image: url(../imagenes/sobrenosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-sobre-nosotros .div-sobre-nosotros {
+    background-color: rgba(255, 255, 255, 0.7); 
+    width: 100%;
+    height: 100%;
+}
+
+.main-sobre-nosotros .div-sobre-nosotros .h1-sobre-nosotros, .p-sobre-nosotros {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 70px;
+    
+}
+
+
