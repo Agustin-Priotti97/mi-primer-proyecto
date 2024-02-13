@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: $color-body;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* img inicio sesion */
+
+.bg {
+    background-image: url(/imagenes/lostresinicio2.jpg);
+    background-position: center center;
+}

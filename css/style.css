@@ -1,321 +1,275 @@
-/* GLOBALES */
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-    background-color: #9BC779; 
+  background-color: #9BC779;
 }
 
 h1 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 
 h3 {
-    font-size: 25px;
+  font-size: 25px;
+  text-align: center;
 }
 
 h4 {
-    font-size: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
-
-/* barra navegacion global*/
-
-.header {
-    display: flex;
-    background-color: #0E792C;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    flex-wrap: wrap;
+img {
+  max-width: 100%;
 }
 
-.header .logo img {
-    height: 60px;
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.header .barra-navegacion .ul-navegacion {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    margin-top: 1rem;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.header .barra-navegacion .ul-navegacion li a {
-    text-decoration: none;
-    background-color: #9BC779;
-    padding: 5px;
-    border-radius: 10px;
-    color: black;
-    box-shadow: 2px 2px 5px grey;
-}
-
-.header .barra-navegacion .ul-navegacion li a:hover{
-    background-color: #0c421b;
-}
-
-
-/* index */
-
-.img-article {
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px grey;
-} 
-
-.contenedor-index {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.div-contenedor {
-    margin-top: 1rem;
-}
-
-.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo{
-    margin: 1rem;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo, .ul-article{
-    list-style: none;
-}
-
-.contenedor-index .section-principal .div-contenedor .messi, .neymar, .ronaldo, .ul-article .boton-ver-mas a{
-    text-decoration: none;
-    color: black;
-}
-
-.boton-ver-mas {
-    background-color: #0E792C;
-    padding: 10px 15px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-}
-
-.boton-ver-mas:hover{
-    background-color: #0c421b;
-}
-
-
-/* tabla */
-
-.complemento div {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-h2.h2Tabla {
-    color: #333;
-    text-align: center;
-}
-
-.complemento table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 50%;
-}
-
-.complemento th, .complemento td {
-    border: 1px solid grey;
-    padding: 8px;
-    text-align: center;
-}
-
-.complemento th {
-    background-color: #333;
-    color: white;
-}
-
-
-/* footer */
-
-footer { 
-    background-color: #0E792C;
-    text-align: center;
-    padding: 20px;
-    font-size: 15px;
-}
-
-
-/* index mq de tablet y deskop */
-
-@media screen and (min-width:768px){
-    .contenedor-index .section-principal .div-contenedor {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-
-/* pagina messi, neymar, ronaldo */
-
-
-.contenedor-pagina .section-pagina .h1-pagina, h2, h3, h4{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.contenedor-pagina .section-pagina .div-pagina .img-pagina {
-    display: block;
-    max-width: 90%;
-    width: 100%;
-    height: auto;
-    margin: 5px 20px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px grey;
-}
-
-.contenedor-pagina .section-pagina .div-pagina .parrafo-pagina {
-    text-align: left;
-    padding: 10px 30px;
-}
-
-.contenedor-pagina .section-pagina .div-pagina .ul-div-pagina{
-    text-align: center;
-    margin: 10px;
-    padding: 10px 30px;
-    list-style: none;
-}
-
-.contenedor-pagina .section-pagina .div-pagina, h3 h4 {
-    text-align: center;
-}   
-
-
-/* mq tablet y deskop */
-
-@media screen and (min-width:768px) {
-    .contenedor-pagina .section-pagina {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 800px;
-        width: 100%;
-    }
-
-    .contenedor-pagina .section-pagina .div-pagina .img-pagina {
-        min-width: 50%;
-        width: 100%;
-    }
-
-    .contenedor-pagina .section-pagina .div-pagina .div-contenido-pagina {
-        display: flex;
-    }
-    
-    .contenedor-pagina .section-pagina .div-pagina .div-reverse {
-        flex-direction: row-reverse;
-    }
-
-    .contenedor-pagina .section-pagina .div-pagina h2 {
-        margin-top: 20px;
-    }
-
-    .contenedor-pagina .section-pagina .div-pagina .div-modificador{
-        display: block;
-    }
-}
-
-
-/* inicio de sesion */
-
-
+/* img inicio sesion */
 .bg {
-    background-image: url(/imagenes/lostresinicio2.jpg);
-    background-position: center center;
+  background-image: url(/imagenes/lostresinicio2.jpg);
+  background-position: center center;
 }
 
-
-
-/* galeria */
-
-.main-galeria .img-galeria-cuatro, .img-galeria-cinco, .img-galeria-seis, .img-galeria-siete {
-    display: none;
+/* Estilos Header */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #0E792C;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem;
+  gap: 10px;
+}
+header .logo img {
+  height: 60px;
+}
+header .barra-navegacion .ul-navegacion {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 640px) {
+  header .barra-navegacion .ul-navegacion {
+    flex-direction: row;
+  }
+}
+header .barra-navegacion li {
+  margin-top: 10px;
+}
+header .barra-navegacion li a {
+  text-decoration: none;
+  background-color: #9BC779;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 2px 2px 5px grey;
+}
+header .barra-navegacion li a:hover {
+  background-color: #0c421b;
+}
+@media screen and (min-width: 640px) {
+  header {
+    flex-direction: row;
+  }
 }
 
-.main-galeria .div-img-galeria .div-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px grey;
+/* estilos index */
+.contenedor-index {
+  text-align: center;
 }
-
-.main-galeria {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 30%);
-    gap: 1rem;
-    margin: 2rem 4rem;
+.contenedor-index .section-principal .img-div-principal {
+  position: relative;
+  width: 100%;
 }
-
-/* mq tablet y deskop */
-
-@media screen and (min-width:768px) {
-    .main-galeria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .main-galeria .img-galeria-siete{
-        display: block;
-        grid-column: span 3;
-    }
+.contenedor-index .section-principal .img-div-principal .img {
+  max-width: 100%;
+  height: auto;
 }
-
-@media screen and (min-width:1024px) {
-    .main-galeria .img-galeria-cuatro, .img-galeria-cinco, .img-galeria-seis {
-        display: block;
-    }
-
-    .main-galeria {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 20% 20% 50%;
-    }
-
-    .main-galeria .img-galeria-uno, .main-galeria .img-galeria-dos, .main-galeria .img-galeria-tres {
-        grid-row: span 2;
-    }
+.contenedor-index .section-principal .img-div-principal .texto-sobre-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-
-
-/* sobre nosotros */
-
-.main-sobre-nosotros {
-    background-image: url(../imagenes/sobrenosotros.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.contenedor-index .section-principal .img-div-principal .texto-sobre-img .h1-index {
+  color: #0E792C;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 640px) {
+  .contenedor-index .section-principal .img-div-principal .texto-sobre-img .h1-index {
+    font-size: 60px;
+  }
+}
+.contenedor-index .section-principal .div-contenedor {
+  margin-top: 1rem;
+}
+.contenedor-index .section-principal .div-contenedor .article {
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+.contenedor-index .section-principal .div-contenedor .article .img-article {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+.contenedor-index .section-principal .div-contenedor .article .ul-article .boton-ver-mas {
+  background-color: #0E792C;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+.contenedor-index .section-principal .div-contenedor .article .ul-article .boton-ver-mas:hover {
+  background-color: #0c421b;
+}
+.contenedor-index .section-principal .div-contenedor .article:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 640px) {
+  .contenedor-index .section-principal .div-contenedor {
     display: flex;
     justify-content: center;
+  }
+}
+
+/* estilos footer */
+footer {
+  background-color: #0E792C;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+/* estilos paginas */
+.contenedor-pagina .section-pagina {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.contenedor-pagina .section-pagina .h1-pagina {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contenedor-pagina .section-pagina .div-pagina {
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 640px) {
+  .contenedor-pagina .section-pagina .div-pagina {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .contenedor-pagina .section-pagina .div-pagina .img-pagina {
+    max-width: 50%;
+  }
 }
 
+/* estilos sobre nosotros */
+.main-sobre-nosotros {
+  background-image: url(../imagenes/sobrenosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main-sobre-nosotros .div-sobre-nosotros {
-    background-color: rgba(255, 255, 255, 0.7); 
-    width: 100%;
-    height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.main-sobre-nosotros .div-sobre-nosotros .h1-sobre-nosotros,
+.main-sobre-nosotros .div-sobre-nosotros .p-sobre-nosotros {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 70px;
 }
 
-.main-sobre-nosotros .div-sobre-nosotros .h1-sobre-nosotros, .p-sobre-nosotros {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-top: 70px;
-    
+/* estilos galeria */
+.main-galeria {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 30%);
+  gap: 1rem;
+  margin: 2rem 4rem;
+}
+.main-galeria .div-img-galeria .div-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+.main-galeria .div-img-galeria:hover {
+  transform: scale(1.2);
+}
+.main-galeria .img-galeria-cuatro,
+.main-galeria .img-galeria-cinco,
+.main-galeria .img-galeria-seis,
+.main-galeria .img-galeria-siete {
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .main-galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .main-galeria .img-galeria-siete {
+    display: block;
+    grid-column: span 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20% 20% 50%;
+  }
+  .main-galeria .img-galeria-cuatro,
+  .main-galeria .img-galeria-cinco,
+  .main-galeria .img-galeria-seis {
+    display: block;
+  }
+  .main-galeria .img-galeria-uno,
+  .main-galeria .img-galeria-dos,
+  .main-galeria .img-galeria-tres {
+    grid-row: span 2;
+  }
 }
 
-
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+/* estilos galeria */
+.main-galeria {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 1rem;
+    margin: 2rem 4rem;
+    .div-img-galeria {
+        .div-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px grey;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .img-galeria-cuatro,
+    .img-galeria-cinco,
+    .img-galeria-seis,
+    .img-galeria-siete {
+        display: none;
+    }
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        .img-galeria-siete {
+            display: block;
+            grid-column: span 3;
+        }
+    }
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20% 20% 50%;
+        .img-galeria-cuatro,
+        .img-galeria-cinco,
+        .img-galeria-seis {
+            display: block;
+        }
+        .img-galeria-uno,
+        .img-galeria-dos,
+        .img-galeria-tres {
+            grid-row: span 2;
+        }
+    }
+}
