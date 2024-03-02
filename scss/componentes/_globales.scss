@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,7 +45,20 @@ a {
 
 /* img inicio sesion */
 
-.bg {
-    background-image: url(/imagenes/lostresinicio2.jpg);
+.boton-iniciar-sesion {
+    background-color: #0E792C;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.boton-iniciar-sesion:hover {
+    background-color: $color-btn-hover;
+}
+
+.img-inicio-sesion {
+    background-image: url(../imagenes/lostresinicio2.jpg);
     background-position: center center;
 }
